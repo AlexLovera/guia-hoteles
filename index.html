@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <!--responsive ->flexbox-->
+<!--sistema de grilla de bootstrap usa la libreria flex-->
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,32 +9,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
     <!--saco cdn, host externos y uso los .min para que sea mas rapido-->
 
     <title>Hoteles</title>
 </head>
 <body>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4">Hoteles</h1>
         </div>
-        <div class="row">
+        <div class="d-flex flex-wrap">
             <div class="col-sm">
                 <p>
                     <h3 id="Hoteles">Hoteles</h3>
-                    <p>Los hoteles mas lujosos y baratos</p>
+                <p>Los hoteles mas lujosos y baratos</p>
                 </p>
             </div>
             <div class="col-sm">
                 <p>
                     <h3>Cabañas</h3>
-                    <p>Cabañas para relajarse</p>
+                <p>Cabañas para relajarse</p>
                 </p>
             </div>
             <div class="col-sm">
@@ -43,30 +39,53 @@
                 </p>
             </div>
         </div>
-        <hr class="my-4"/> <!--Espacio para separar parrafos-->
-        <div>
-            <div class="row">
-                <div class="col-sm text-center">
-                    <h3>Bajo el agua en Maldivas</h3>
-                    <p>Las islas Maldivas proponen una experiencia única en este novedoso hotel bajo el agua</p>
-                    <img class="img-fluid" alt="Responsive image" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
-                </div>
-                <div class="col-sm text-center">
-                    <h3>Hotel en suiza</h3>
-                    <p>El hotel perfecto si te gustan las montañas y la tranquilidad</p>
-                    <img class="img-fluid" alt="Responsive image" src="img/suiza_hotel.jpg" title="Hotel en Suiza" /><br />
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
-                </div>
-                <div class="col-sm text-center">
-                    <h3>Hotel en Maldivas</h3>
-                    <p>Es un nuevo resort de lujo perfecto para pasar la luna de miel o relajarse luego del arduo trabajo</p>
-                    <img class="img-fluid" alt="Responsive image" src="img/maldivas_hotel.jpg" title="Hotel en Maldivas" /><br />
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
-                </div>
+        <hr class="my-4" /> <!--Espacio para separar parrafos-->
+        <div class="d-flex flex-wrap">
+            <div class="cards-hotel d-flex flex-column justify-content-between">
+                <h3>Bajo el agua en Maldivas</h3>
+                <p>Las islas Maldivas proponen una experiencia única en este novedoso hotel bajo el agua</p>
+                <img class="img-fluid" alt="Responsive image" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
+                <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
+            </div>
+            <div class="cards-hotel d-flex flex-column justify-content-between">
+                <h3>Hotel en suiza</h3>
+                <p>El hotel perfecto si te gustan las montañas y la tranquilidad</p>
+                <img class="img-fluid" alt="Responsive image" src="img/suiza_hotel.jpg" title="Hotel en Suiza" /><br />
+                <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
+            </div>
+            <div class="cards-hotel d-flex flex-column justify-content-between">
+                <h3>Hotel en Maldivas</h3>
+                <p>Es un nuevo resort de lujo perfecto para pasar la luna de miel o relajarse luego del arduo trabajo</p>
+                <img class="img-fluid" alt="Responsive image" src="img/maldivas_hotel.jpg" title="Hotel en Maldivas" /><br />
+                <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-4 d-flex flex-column">
+                <p>Seguinos en nuestras redes</p>
+                <a href="http://wwww.facebook.com">Facebook</a>
+                <a href="http://wwww.twitter.com">Twitter</a>
+                <a href="http://wwww.instagram.com">Instagram</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <address>
+                    Calle 123, CABA, Argentina
+                    +54911111111
+                    contacto@guiahoteles.com
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                Conoce mas de nosotros!
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
