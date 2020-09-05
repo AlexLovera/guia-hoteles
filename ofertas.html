@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="en">
+<!--responsive ->flexbox-->
+<!--sistema de grilla de bootstrap usa la libreria flex-->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--importarlo desde node_modules trae error por codigo en la libreria-->
+
+    <link rel="stylesheet" href="style/main.css">
+    <!--saco cdn, host externos y uso los .min para que sea mas rapido-->
+
+    <title>Hoteles</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top"><!--fixed-top para que quede fija-->
+        <a class="navbar-brand" href="./index.html">Hoteles</a>
+        <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Iniciar sesion</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Crear cuenta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Mis reservaciones</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Ofertas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hoteles</h1>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ofertas</li>
+            </ol>
+        </nav>
+        <div class="d-flex flex-wrap">
+
+        </div>
+    </div>
+    <footer>
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-4 d-flex flex-column">
+                <p>Seguinos en nuestras redes</p>
+                <a href="http://wwww.facebook.com">Facebook</a>
+                <a href="http://wwww.twitter.com">Twitter</a>
+                <a href="http://wwww.instagram.com">Instagram</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <address>
+                    Calle 123, CABA, Argentina
+                    +54911111111
+                    contacto@guiahoteles.com
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                Conoce mas de nosotros!
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
