@@ -18,9 +18,10 @@
     <title>Hoteles</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md"><!--fixed-top para que quede fija-->
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+        <!--fixed-top para que quede fija-->
         <a class="navbar-brand" href="#">Hoteles</a>
-        <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,27 +49,28 @@
             <div class="col-sm">
                 <p>
                     <h3 id="Hoteles">Hoteles</h3>
-                    <p>Los hoteles mas lujosos y baratos</p>
+                <p>Los hoteles mas lujosos y baratos</p>
                 </p>
             </div>
             <div class="col-sm">
                 <!--el p de abajo creo que no es necesario-->
                 <p>
                     <h3>Cabañas</h3>
-                    <p>Cabañas para relajarse</p>
+                <p>Cabañas para relajarse</p>
                 </p>
             </div>
             <div class="col-sm">
                 <p>
                     <h3 id="Departamentos">Departamentos</h3>
-                    <p>Los departamentos con mejor posicionamiento</p>
+                <p>Los departamentos con mejor posicionamiento</p>
                 </p>
             </div>
         </div>
         <hr class="my-4" /> <!--Espacio para separar parrafos-->
-        <div class="d-flex flex-wrap cards-hotel"><!--sacar flex cuando se trabaj con card?-->
+        <div class="cards-hotel card-group">
+            <!--sacar flex cuando se trabaj con card?-->
             <!-- card tiene head body y footer tambien-->
-            <div class="card cards-hotel d-flex flex-column justify-content-between">
+            <div class="card cards-hotel justify-content-between">
                 <div class="card-header" style="color:springgreen;">
                     Oferta
                 </div>
@@ -77,22 +79,39 @@
                     <h6 class="card-subtitle">Pais x</h6>
                     <img class="card-img-top" alt="Imagen habitacion bajo el agua" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
                     <p class="card-text">Las islas Maldivas proponen una experiencia única en este novedoso hotel bajo el agua</p>
+                </div>
+                <div class="card-footer" style="color:springgreen;">
                     <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
                 </div>
             </div>
-                <div class="cards-hotel d-flex flex-column justify-content-between">
-                    <h3>Hotel en suiza</h3>
-                    <p>El hotel perfecto si te gustan las montañas y la tranquilidad</p>
-                    <img class="img-fluid" alt="Responsive image" src="img/suiza_hotel.jpg" title="Hotel en Suiza" /><br />
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
+            <div class="card cards-hotel d-flex flex-column justify-content-between">
+                <div class="card-header" style="color:springgreen;">
+                    Oferta
                 </div>
-                <div class="cards-hotel d-flex flex-column justify-content-between">
-                    <h3>Hotel en Maldivas</h3>
-                    <p>Es un nuevo resort de lujo perfecto para pasar la luna de miel o relajarse luego del arduo trabajo</p>
-                    <img class="img-fluid" alt="Responsive image" src="img/maldivas_hotel.jpg" title="Hotel en Maldivas" /><br />
+                <div class="card-body">
+                    <h3 class="card-title">Hotel en suiza</h3>
+                    <p class="card-text">El hotel perfecto si te gustan las montañas y la tranquilidad</p>
+                    <img class="card-img-top" alt="Responsive image" src="img/suiza_hotel.jpg" title="Hotel en Suiza" /><br />
+                </div>
+                <div class="card-footer" style="color:springgreen;">
                     <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
                 </div>
             </div>
+            <div class="card cards-hotel d-flex flex-column justify-content-between">
+                <div class="card-header" style="color:springgreen;">
+                    Oferta
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Hotel en Maldivas</h3>
+                    <p class="card-text">Es un nuevo resort de lujo perfecto para pasar la luna de miel o relajarse luego del arduo trabajo</p>
+                    <img class="card-img-top" alt="Responsive image" src="img/maldivas_hotel.jpg" title="Hotel en Maldivas" /><br />
+                    
+                </div>
+                <div class="card-footer" style="color:springgreen;">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Ver más</a>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="d-flex flex-wrap">
