@@ -49,7 +49,53 @@
 
             </div>
         </form>
+        <h1>Dejanos tu comentario</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" />
+                </div>
+            </div>
+            <div class="form-group">
+                <!--no hay que especificar tamaño de columna? porque es un solo campo-->
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su email" />
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su domicilio" />
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" class="form-control">
+                        <option selected>Capital federal</option>
+                        <option>Buenos Aires</option>
+                        <option>Córdoba</option>
+                        <option>Santa Fe</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck"/>
+                    <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </div>
+    <br />
+
     <footer>
         <div class="d-flex flex-wrap">
             <div class="col-sm-4 d-flex flex-column">
