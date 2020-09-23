@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html lang="en">
+<!--responsive ->flexbox-->
+<!--sistema de grilla de bootstrap usa la libreria flex-->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--importarlo desde node_modules trae error por codigo en la libreria-->
+
+    <link rel="stylesheet" href="style/main.css">
+    <!--saco cdn, host externos y uso los .min para que sea mas rapido-->
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <title>Hoteles</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md"><!--fixed-top para que quede fija-->
+        <a class="navbar-brand" href="./index.html">Hoteles</a>
+        <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Iniciar sesion</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Crear cuenta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Mis reservaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="./ofertas.html">Ofertas</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hoteles</h1>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
+            </ol>
+        </nav> 
+
+        <div class="table-responsive"><!--queda mejor sin el div?-->
+            <table class="table table-striped">
+                <!--table-striped para alternar-->
+                <thead class="thead-dark">
+                <th>Calidad</th>
+                <th>Pinamar</th>
+                <th>Mar del Plata</th>
+                <th>San Clemente</th>
+                <th>Santa Teresita</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$100</td>
+                        <td>$120</td>
+                        <td>$150</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$200</td>
+                        <td>$220</td>
+                        <td>$250</td>
+                        <td>$290</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$300</td>
+                        <td>$320</td>
+                        <td>$350</td>
+                        <td>$480</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$400</td>
+                        <td>$420</td>
+                        <td>$450</td>
+                        <td>$580</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$500</td>
+                        <td>$520</td>
+                        <td>$550</td>
+                        <td>$780</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+
+    <footer>
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-4 d-flex flex-column">
+                <p>Seguinos en nuestras redes</p>
+                <a href="http://wwww.facebook.com">Facebook</a>
+                <a href="http://wwww.twitter.com">Twitter</a>
+                <a href="http://wwww.instagram.com">Instagram</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <address>
+                    <p><span class="oi oi-basket footer-address-icons"></span>Calle 123, CABA, Argentina</p>
+                    <p><span class="oi oi-phone footer-address-icons"></span>+54911111111</p>
+                    <p><span class="oi oi-envelope-closed footer-address-icons"></span>contacto@guiahoteles.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                Conoce mas de nosotros!
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
