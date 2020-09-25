@@ -2,7 +2,6 @@
     background:rgb(79, 79, 79);
 }
 
-
 .jumbotron,footer {
     background: rgb(128, 128, 128);
 }
@@ -10,6 +9,11 @@
     background-image: url("../img/banner.jpg");
     background-size:contain;
     margin-top:2rem;
+}
+
+#link {
+    color: black;
+    text-decoration: none;
 }
 
 .cards-hotel {
