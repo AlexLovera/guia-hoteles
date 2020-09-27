@@ -91,12 +91,14 @@
                     Oferta
                 </div>
                 <div class="card-body">
-                    <h3 class="card-title">Bajo el agua en Maldivas 
-                        <span class="oi oi-info" style="font-size:1rem;" data-toggle="tooltip" data-placement="top" 
-                              title="Las primeras reservas cuentan con 1 dia de regalo"></span></h3>
+                    <h3 class="card-title">
+                        Bajo el agua en Maldivas
+                        <span class="oi oi-info" style="font-size:1rem;" data-toggle="tooltip" data-placement="top"
+                              title="Las primeras reservas cuentan con 1 dia de regalo"></span>
+                    </h3>
                     <h6 class="card-subtitle">Pais x</h6>
                     <!--ver imagens vectorizadas-->
-                    <img class="card-img-top image-flui"" alt="Imagen habitacion bajo el agua" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
+                    <img class="card-img-top image-flui" " alt="Imagen habitacion bajo el agua" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
                     <p class="card-text">Las islas Maldivas proponen una experiencia única en este novedoso hotel bajo el agua</p>
                 </div>
                 <div class="card-footer" style="color:springgreen;">
@@ -135,6 +137,7 @@
         <div class="col-sm-12 btn-unirse">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#unirse">Quiero unirme!</button>
         </div>
+
         <div class="modal fade" id="unirse" tabindex="-1" role="dialog" aria-labelledby="modalEjemplo" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -148,7 +151,7 @@
                         <form>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Tu email:</label>
-                                <input type="text" class="form-control" id="recipient-name"/>
+                                <input type="text" class="form-control" id="recipient-name" />
                             </div>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Nombre del hotel o lugar</label>
@@ -161,6 +164,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="col-sm-12 btn-unirse">
+            <button type="button" class="btn btn-primary" data-placement="bottom" data-toggle="popover" title="Promos" 
+                    data-content="Fijate las promociones en nuestra seccion.Prueba popover">Promos</button>
         </div>
     </div>
     <footer>
@@ -192,6 +200,7 @@
     <script>
         $(() => {
             $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
         });
     </script>
 </body>
