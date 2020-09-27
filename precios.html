@@ -135,7 +135,52 @@
                 </div>
             </div>
             <div class="tab-pane" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <h5 class="mb-0 bg-dark">
+                            <!--margen 0?-->
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                Tarjeta Basica
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            hola
+                        </div>
+                    </div>
 
+                    <div class="card">
+                        <h5 class="mb-0 bg-dark">
+                            <!--margen 0?-->
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseVIP" aria-expanded="true" aria-controls="collapseVIP">
+                                Tarjeta VIP
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseVIP" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            tarjetas vip
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h5 class="mb-0 bg-dark">
+                            <!--margen 0?-->
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#tercerCollapse" aria-expanded="true" aria-controls="tercerCollapse">
+                                tercer Collapse
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="tercerCollapse" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            tercer Collapse abierto
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane" id="comentario" role="tabpanel" aria-labelledby="comentario-tab">
 
