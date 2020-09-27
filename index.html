@@ -91,7 +91,9 @@
                     Oferta
                 </div>
                 <div class="card-body">
-                    <h3 class="card-title">Bajo el agua en Maldivas</h3>
+                    <h3 class="card-title">Bajo el agua en Maldivas 
+                        <span class="oi oi-info" style="font-size:1rem;" data-toggle="tooltip" data-placement="top" 
+                              title="Las primeras reservas cuentan con 1 dia de regalo"></span></h3>
                     <h6 class="card-subtitle">Pais x</h6>
                     <!--ver imagens vectorizadas-->
                     <img class="card-img-top image-flui"" alt="Imagen habitacion bajo el agua" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
@@ -187,5 +189,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(() => {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
 </body>
 </html>
