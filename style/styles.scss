@@ -1,0 +1,45 @@
+//html color picker para ayudarse, usar hex?
+$gray: rgb(128, 128, 128);
+
+@mixin margenes($top,$bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+body {
+    background: rgb(79, 79, 79);
+}
+
+.jumbotron, footer {
+    background: $gray;
+}
+
+.jumbotron {
+    background-image: url("../img/banner.jpg");
+    background-size: contain;
+    margin-top: 2rem;
+    @include margenes(2rem,2rem);
+}
+
+#link {
+    color: black;
+    text-decoration: none;
+}
+
+.cards-hotel {
+    flex: 1 150px;
+    padding: 2px 2px 10px 2px;
+    background: $gray;
+}
+
+.cards-hotel p {
+    height: 117px;
+}
+
+.footer-address-icons {
+    padding-right: 10px;
+}
+
+.btn-unirse {
+    margin: 1rem 0 1rem auto;
+}
