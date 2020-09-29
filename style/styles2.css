@@ -1,0 +1,33 @@
+body {
+  background: #4f4f4f;
+}
+.jumbotron, footer {
+    background: #808080;
+}
+footer {
+  background: #808080;
+}
+.jumbotron {
+  background-image: url("../img/banner.jpg");
+  background-size: contain;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#link {
+  color: black;
+  text-decoration: none;
+}
+.cards-hotel {
+  flex: 1 150px;
+  padding: 2px 2px 10px 2px;
+  background: #808080;
+}
+.cards-hotel p {
+  height: 117px;
+}
+.footer-address-icons {
+  padding-right: 10px;
+}
+.btn-unirse {
+  margin: 1rem 0 1rem auto;
+}
