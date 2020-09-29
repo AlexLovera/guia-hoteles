@@ -1,0 +1,44 @@
+@grayy: rgb(128, 128, 128);
+
+// a diferencia de sass el mixin usa . en lugar de @, y @ en lugar de $
+.margenes(@top,@bottom) {
+	margin-top: @top;
+	margin-bottom: @bottom;
+}
+
+body {
+	background: rgb(79, 79, 79);
+}
+
+.jumbotron, footer {
+	background: @grayy;
+}
+
+.jumbotron {
+	background-image: url("../img/banner.jpg");
+	background-size: contain;
+	.margenes(2rem,2rem);
+}
+
+#link {
+	color: black;
+	text-decoration: none;
+}
+
+.cards-hotel {
+	flex: 1 150px;
+	padding: 2px 2px 10px 2px;
+	background: @grayy;
+}
+
+.cards-hotel p {
+	height: 117px;
+}
+
+.footer-address-icons {
+	padding-right: 10px;
+}
+
+.btn-unirse {
+	margin: 1rem 0 1rem auto;
+}
