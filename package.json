@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o style/ style/"
+    "scss": "node-sass -o style/ style/",
+    "less": "lessc style/styles2.less style/styles2.css"
   },
   "author": "Alex Lovera",
   "license": "ISC",
