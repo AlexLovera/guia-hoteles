@@ -8,19 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/precios.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--importarlo desde node_modules trae error por codigo en la libreria-->
 
     <link rel="stylesheet" href="style/main.css">
     <!--saco cdn, host externos y uso los .min para que sea mas rapido-->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
 
     <title>Hoteles</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md"><!--fixed-top para que quede fija-->
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+        <!--fixed-top para que quede fija-->
         <a class="navbar-brand" href="./index.html">Hoteles</a>
-        <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,10 +49,10 @@
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
-        </nav> 
+        </nav>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active"data-toggle="tab" id="compara-tab" href="#compara"
+                <a class="nav-link active" data-toggle="tab" id="compara-tab" href="#compara"
                    role="tab" aria-controls="compara" aria-selected="true">Compara</a>
             </li>
             <li>
@@ -184,8 +187,8 @@
             </div>
             <div class="tab-pane" id="comentario" role="tabpanel" aria-labelledby="comentario-tab">
 
-            </div>          
-        </div>      
+            </div>
+        </div>
     </div>
     <br />
 
@@ -209,11 +212,13 @@
             </div>
         </div>
     </footer>
+    <!-- build:js dist/precios.js -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
 
 </body>
 </html>

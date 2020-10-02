@@ -8,12 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--importarlo desde node_modules trae error por codigo en la libreria-->
 
     <link rel="stylesheet" href="style/styles.css">
     <!--saco cdn, host externos y uso los .min para que sea mas rapido-->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
 
     <title>Hoteles</title>
 </head>
@@ -55,13 +57,13 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <!--d-block w-100 ayuda a que el browser no defina dimensiones por su cuenta-->
-                    <img class="d-block w-100" src="./img/Cristo-redentor-noche.jpg" alt="Imagen del cristo redentor en Rio de Janeiro de noche"/>
+                    <img class="d-block w-100" src="./img/Cristo-redentor-noche.jpg" alt="Imagen del cristo redentor en Rio de Janeiro de noche" />
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/Obelisco-noche.jpg" alt="Imagen del obelisco en Buenos Aires de noche"/>
+                    <img class="d-block w-100" src="./img/Obelisco-noche.jpg" alt="Imagen del obelisco en Buenos Aires de noche" />
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/vaadhoo-noche.jpg" alt="Imagen de la playa Vaadhoo de noche"/>
+                    <img class="d-block w-100" src="./img/vaadhoo-noche.jpg" alt="Imagen de la playa Vaadhoo de noche" />
                 </div>
                 <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev" aria-hidden="true"></span>
@@ -71,7 +73,7 @@
                     <span class="carousel-control-next" aria-hidden="true"></span>
                     <span class="sr-only">Siguiente</span>
                 </a>
-            </div>         
+            </div>
         </div>
 
         <nav aria-label="breadcrumb">
@@ -122,7 +124,7 @@
                     </h3>
                     <h6 class="card-subtitle">Pais x</h6>
                     <!--ver imagens vectorizadas-->
-                    <img class="card-img-top image-flui" " alt="Imagen habitacion bajo el agua" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
+                    <img class="card-img-top image-fluid" alt="Imagen habitacion bajo el agua" src="img/maldiva_hotel_bajo_el_agua.jpg" title="Hotel en Maldivas" /><br />
                     <p class="card-text">Las islas Maldivas proponen una experiencia única en este novedoso hotel bajo el agua</p>
                 </div>
                 <div class="card-footer" style="color:springgreen;">
@@ -192,8 +194,10 @@
         </div>
 
         <div class="col-sm-12 btn-unirse">
-            <button type="button" class="btn btn-primary" data-placement="bottom" data-toggle="popover" title="Promos" 
-                    data-content="Fijate las promociones en nuestra seccion.Prueba popover">Promos</button>
+            <button type="button" class="btn btn-primary" data-placement="bottom" data-toggle="popover" title="Promos"
+                    data-content="Fijate las promociones en nuestra seccion.Prueba popover">
+                Promos
+            </button>
         </div>
     </div>
     <footer>
@@ -216,6 +220,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- build:js dist/index.js -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -230,7 +236,7 @@
                 interval: 2000
             });
 
-            function cambiarColorYEstadoDeBotonParaModal(eventoModal,claseARemover,claseAAgregar,estaHabilitado) {
+            function cambiarColorYEstadoDeBotonParaModal(eventoModal, claseARemover, claseAAgregar, estaHabilitado) {
                 $('#unirse').on(eventoModal, (e) => {
                     console.log('el modal acaba de mostrarse');
 
@@ -242,27 +248,28 @@
             }
             cambiarColorYEstadoDeBotonParaModal('show.bs.modal', 'btn-primary', 'btn-success', true);
             cambiarColorYEstadoDeBotonParaModal('hide.bs.modal', 'btn-success', 'btn-primary', false);
-/*
-            //se aplica sobre el div que es el modal en si
-            $('#unirse').on('show.bs.modal', (e) => {
-                console.log('el modal acaba de mostrarse');
+            /*
+                        //se aplica sobre el div que es el modal en si
+                        $('#unirse').on('show.bs.modal', (e) => {
+                            console.log('el modal acaba de mostrarse');
 
-                // se va a utilizar el boton en si...
-                $('#unirseBtn').removeClass('btn-primary');
-                $('#unirseBtn').addClass('btn-success');
-                $('#unirseBtn').prop('disabled', true);
-            });
+                            // se va a utilizar el boton en si...
+                            $('#unirseBtn').removeClass('btn-primary');
+                            $('#unirseBtn').addClass('btn-success');
+                            $('#unirseBtn').prop('disabled', true);
+                        });
 
-            $('#unirse').on('hide.bs.modal', (e) => {
-                console.log('el modal acaba de mostrarse');
+                        $('#unirse').on('hide.bs.modal', (e) => {
+                            console.log('el modal acaba de mostrarse');
 
-                // se va a utilizar el boton en si...
-                $('#unirseBtn').removeClass('btn-success');
-                $('#unirseBtn').addClass('btn-primary');
-                $('#unirseBtn').prop('disabled', false);
-            });
-*/
+                            // se va a utilizar el boton en si...
+                            $('#unirseBtn').removeClass('btn-success');
+                            $('#unirseBtn').addClass('btn-primary');
+                            $('#unirseBtn').prop('disabled', false);
+                        });
+            */
         });
     </script>
+    <!-- endbuild -->
 </body>
 </html>

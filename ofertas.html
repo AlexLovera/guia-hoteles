@@ -8,19 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/ofertas.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--importarlo desde node_modules trae error por codigo en la libreria-->
 
     <link rel="stylesheet" href="style/main.css">
     <!--saco cdn, host externos y uso los .min para que sea mas rapido-->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
 
     <title>Hoteles</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md"><!--fixed-top para que quede fija-->
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+        <!--fixed-top para que quede fija-->
         <a class="navbar-brand" href="./index.html">Hoteles</a>
-        <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarBarDropdown" aria-expanded="false" aria-label="Toggle-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -72,11 +75,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- build:js dist/ofertas.js -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <!-- endbuild -->
 </body>
 </html>
