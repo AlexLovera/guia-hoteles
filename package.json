@@ -12,7 +12,8 @@
     "watch:scss": "onchange style/*.scss -- npm run scss",
     "clean": "rimraf dist",
     "imagemin": "imagemin img/* --out-dir dist/images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin ofertas.html -d dist --htmlmin -o dist/ofertas.html && usemin precios.html -d dist --htmlmin -o dist/precios.html"
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin ofertas.html -d dist --htmlmin -o dist/ofertas.html && usemin precios.html -d dist --htmlmin -o dist/precios.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "author": "Alex Lovera",
   "license": "ISC",
