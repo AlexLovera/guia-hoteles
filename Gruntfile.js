@@ -4,13 +4,13 @@ module.exports = function (grunt) {
         //buscando en la carpeta css todos los archivos scss y genere los correspondientes
         sass: {
             dist: {
-                files: {
+                files: [{
                     expand: true,
-                    cwd: 'css',
+                    cwd: 'style',          // buscando en la carpeta style
                     src: ['*.scss'],       // todos los archivos a buscar
-                    dest: 'css',           // carpeta de destino
+                    dest: 'style',           // carpeta de destino
                     ext: '.css' //extension
-                }
+                }]
             }
         }
     });
