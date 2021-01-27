@@ -1,1 +1,1 @@
-# Repositorio personal para curso de bootstrap en Coursera #
+# Practica varia bootstrap #
